@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet">
+    <title>school</title>
+  </head>
+  <body>
+    <header class="bg-emerald-200 m-4 px-4 md:px-8 py-4 rounded-2xl shadow-lg">
+  <div class="flex items-center justify-between gap-3">
+
+    <!-- LEFT LINKS -->
+    <div class="hidden md:flex items-center gap-2 lg:gap-3">
+      <a href="#" class="nav-btn">لینک A</a>
+      <a href="#" class="nav-btn">لینک B</a>
+    </div>
+
+    <!-- LOGIN -->
+    <button class="hidden lg:block nav-btn login-btn">
+      LOGIN
+    </button>
+
+    <!-- SEARCH -->
+    <div class="relative flex-1 max-w-xl">
+      <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+        fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+
+      <input
+        type="search"
+        placeholder="جستجو..."
+        class="w-full bg-white pl-10 pr-4 py-2 rounded-xl shadow-inner
+               text-center outline-none
+               focus:ring-2 focus:ring-emerald-500"
+      />
+    </div>
+
+    <!-- RIGHT LINKS -->
+    <div class="hidden md:flex items-center gap-2 lg:gap-3">
+      <a href="#" class="nav-btn">لینک C</a>
+      <a href="#" class="nav-btn">لینک D</a>
+    </div>
+
+    <!-- LOGO -->
+    <button class="hidden lg:block nav-btn logo-btn">
+      LOGO
+    </button>
+
+    <!-- MOBILE MENU BTN -->
+    <button id="menuBtn"
+      class="md:hidden bg-black text-white p-2 rounded-xl">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu"
+    class="hidden md:hidden mt-4 bg-emerald-300 rounded-xl p-4 space-y-3">
+
+    <button class="mobile-btn">LOGIN</button>
+    <button class="mobile-btn">LOGO</button>
+    <button class="mobile-btn">لینک A</button>
+    <button class="mobile-btn">لینک B</button>
+    <button class="mobile-btn">لینک C</button>
+    <button class="mobile-btn">لینک D</button>
+
+  </div>
+</header>
+
+<div class="bg-amber-100 m-5 w-250 h-50"> nnnnnc</div>
+<footer class="bg-zinc-900 text-white mt-20">
+  <div
+    class="max-w-6xl mx-auto px-4 py-10
+           bg-gradient-to from-green-900 to-emerald-800
+           rounded-3xl shadow-2xl">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- فرم ارتباط -->
+      <div class="bg-green-950/60 rounded-2xl p-6 space-y-4 border border-green-400">
+
+        <h3 class="text-emerald-300 font-bold text-lg">
+          ارتباط با ما
+        </h3>
+
+        <div class="flex items-center gap-3">
+          <input type="email" placeholder="ایمیل" class="input-style">
+          <span class="label-style">ایمیل</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <input type="text" placeholder="موضوع" class="input-style">
+          <span class="label-style">موضوع</span>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <textarea rows="3" placeholder="پیام شما"
+            class="input-style resize-none"></textarea>
+          <span class="label-style mt-2">پیام</span>
+        </div>
+
+        <button
+          class="w-full py-3 rounded-xl bg-gradient-to
+                 from-amber-500 to-orange-500 text-black font-bold
+                 hover:scale-95 transition">
+          ارسال
+        </button>
+      </div>
+
+      <!-- اطلاعات مدرسه -->
+      <div class="space-y-3 text-emerald-100">
+        <h3 class="text-amber-400 font-bold text-lg">
+          اطلاعات مدرسه
+        </h3>
+        <p>🏫 نام مدرسه</p>
+        <p>🎓 تعداد رشته‌ها</p>
+        <p>📍 آدرس</p>
+        <p>📞 شماره تماس</p>
+        <p>✉️ ایمیل</p>
+      </div>
+
+      <!-- توضیح / لوگو -->
+      <div class="flex flex-col justify-between text-emerald-100">
+
+        <div
+          class="inline-block mb-4 px-6 py-2 border-2 border-amber-400
+                 rounded-xl text-amber-400 font-bold rotate-2">
+          LOGO
+        </div>
+
+        <p class="text-sm leading-6">
+          این وب‌سایت جهت اطلاع‌رسانی و ارتباط با دانش‌آموزان و اولیا
+          طراحی شده است.
+        </p>
+
+        <p class="text-xs text-green-300 mt-6">
+          © 2025 تمامی حقوق محفوظ است
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  
+  
+  </body>
+</html>
+ <script type="module" src="/src/main.ts"></script>
